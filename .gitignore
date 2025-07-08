@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignore models daved with Joblib
+*.pkl
+
+# Ignore idea file
+*.idea
+
 # Distribution / packaging
 .Python
 build/
