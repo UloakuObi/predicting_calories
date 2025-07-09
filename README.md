@@ -34,8 +34,6 @@ Understanding how many calories are burned during exercise is useful for fitness
   - **> 10 min** → high-duration model
 - Models are trained with XGBoost and saved as `.json` files
 
-## Folder Structure
-
 
 ## Folder Structure
 - `app/` – Streamlit app files

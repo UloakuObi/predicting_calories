@@ -26,7 +26,7 @@ st.markdown("""
             color: black !important;
             border: 1px solid #ccc !important;
         }
-
+        
         /* Adjust dropdowns and slider text color */
         .stSelectbox div, .stNumberInput div {
             background-color: #f8f8f8 !important;
