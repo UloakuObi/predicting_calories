@@ -19,46 +19,12 @@ st.markdown("""
             background-color: white !important;
             color: black !important;
         }
-
-        [data-testid="stSidebar"] {
-            background-color: #f8f8f8 !important;
-        }
             
          /* Make input boxes white with black text */
         input, select, textarea {
             background-color: white !important;
             color: black !important;
             border: 1px solid #ccc !important;
-        }
-
-        label, .stTextInput label, .stNumberInput label, .stSelectbox label {
-            background-color: transparent !important;
-        }
-            
-
-        /* Fix white patches behind labels */
-        div[data-testid="stNumberInput"] > label,
-        div[data-testid="stTextInput"] > label,
-        div[data-testid="stSelectbox"] > label {
-            background-color: transparent !important;
-        }
-
-        /* Fix the container directly above the label */
-        div[data-testid="stNumberInput"],
-        div[data-testid="stTextInput"],
-        div[data-testid="stSelectbox"] {
-            background-color: transparent !important;
-        }
-
-        /* Adjust Streamlit's styled input containers */
-        [data-baseweb="input"] {
-            background-color: white !important;
-        }
-
-        /* Adjust dropdowns and slider text color */
-        .stSelectbox div, .stNumberInput div {
-            background-color: white !important;
-            color: black !important;
         }
 
         h1, h2, h3, h4, h5, h6, p, span, div {
