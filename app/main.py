@@ -125,9 +125,9 @@ with left_col:
             height = st.number_input("⬆️Height (cm)", min_value=120.0, max_value=250.0, step=0.5)
         with col2:
             #gender = st.selectbox("♀♂ Gender", ["Male", "Female"])
-            gender = st.radio("♀♂ Gender", options=["Male", "Female"], horizontal=True)  # Optional: displays buttons side-by-side)
             heart_rate = st.number_input("❤️Heart Rate (bpm)", min_value=60, max_value=130, step=1)
             duration = st.number_input("🏃Duration (min)", min_value=1, max_value=30, step=1)
+            gender = st.radio("♀♂ Gender", options=["Male", "Female"], horizontal=True)  # Optional: displays buttons side-by-side)
 
         # Add spacing to separate from last row
         st.markdown("")
