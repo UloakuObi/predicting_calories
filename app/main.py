@@ -10,15 +10,7 @@ from streamlit_extras.stylable_container import stylable_container
 
 
 # --- PAGE CONFIG ---
-#st.set_page_config(page_title="Calorie Burn Estimator", layout="wide")
-
-#
-
-st.set_page_config(
-    page_title="Calorie Burn Predictor",
-    layout="centered",
-    initial_sidebar_state="collapsed"
-)
+st.set_page_config(page_title="Calorie Burn Estimator", layout="wide")
 
 # --- Force light mode visually with custom CSS ---
 st.markdown("""
@@ -30,6 +22,23 @@ st.markdown("""
 
         [data-testid="stSidebar"] {
             background-color: #f8f8f8 !important;
+        }
+            
+         /* Make input boxes white with black text */
+        input, select, textarea {
+            background-color: white !important;
+            color: black !important;
+            border: 1px solid #ccc !important;
+        }
+
+        /* Adjust Streamlit's styled input containers */
+        [data-baseweb="input"] {
+            background-color: white !important;
+        }
+
+        /* Adjust dropdowns and slider text color */
+        .stSelectbox div, .stNumberInput div {
+            color: black !important;
         }
 
         h1, h2, h3, h4, h5, h6, p, span, div {
@@ -59,7 +68,7 @@ st.markdown("""
 
         [data-testid="stVerticalBlock"] {
             max-height: 100vh;
-            overflow-y: hidden;
+            overflow-y: auto;
         }
 
         h1, h2, h3 {
