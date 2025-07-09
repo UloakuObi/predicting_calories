@@ -10,7 +10,39 @@ from streamlit_extras.stylable_container import stylable_container
 
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="Calorie Burn Estimator", layout="wide")
+#st.set_page_config(page_title="Calorie Burn Estimator", layout="wide")
+
+#
+
+st.set_page_config(
+    page_title="Calorie Burn Predictor",
+    layout="centered",
+    initial_sidebar_state="collapsed"
+)
+
+# --- Force light mode visually with custom CSS ---
+st.markdown("""
+    <style>
+        html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        [data-testid="stSidebar"] {
+            background-color: #f8f8f8 !important;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, span, div {
+            color: black !important;
+        }
+
+        .stButton > button {
+            background-color: #6ec071 !important;
+            color: white !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 
 # --- Compact layout settings ---
 st.markdown("""
