@@ -31,6 +31,10 @@ st.markdown("""
             border: 1px solid #ccc !important;
         }
 
+        label, .stTextInput label, .stNumberInput label, .stSelectbox label {
+            background-color: transparent !important;
+        }
+            
         /* Adjust Streamlit's styled input containers */
         [data-baseweb="input"] {
             background-color: white !important;
@@ -133,7 +137,8 @@ with left_col:
             weight = st.number_input("⚖️Weight (kg)", min_value=30.0, max_value=140.0, step=0.5)
             height = st.number_input("⬆️Height (cm)", min_value=120.0, max_value=250.0, step=0.5)
         with col2:
-            gender = st.selectbox("♀♂ Gender", ["Male", "Female"])
+            #gender = st.selectbox("♀♂ Gender", ["Male", "Female"])
+            gender = st.radio("♀♂ Gender", options=["Male", "Female"], horizontal=True)  # Optional: displays buttons side-by-side)
             heart_rate = st.number_input("❤️Heart Rate (bpm)", min_value=60, max_value=130, step=1)
             duration = st.number_input("🏃Duration (min)", min_value=1, max_value=30, step=1)
 
