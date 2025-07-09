@@ -41,6 +41,36 @@ st.markdown("""
             background-color: white !important;
             color: black !important;
         }
+        
+        .stSelectbox {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        /* Inner text input for search */
+        .stSelectbox input {
+            background-color: white !important;
+            color: black !important;
+            caret-color: transparent !important;  /* hide blinking cursor */
+        }
+            
+        /* Text inside the selected value display */
+        .stSelectbox > div > div {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        /* Dropdown menu itself (when expanded) */
+        [data-baseweb="select"] {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        /* Individual options inside the dropdown */
+        [data-baseweb="menu"] {
+            background-color: white !important;
+            color: black !important;
+        }
 
         h1, h2, h3, h4, h5, h6, p, span, div {
             color: black !important;
