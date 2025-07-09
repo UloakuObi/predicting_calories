@@ -38,6 +38,7 @@ st.markdown("""
 
         /* Adjust dropdowns and slider text color */
         .stSelectbox div, .stNumberInput div {
+            background-color: white !important;
             color: black !important;
         }
 
@@ -58,7 +59,7 @@ st.markdown("""
     <style>
         .block-container {
             padding-top: 0.5rem;
-            padding-bottom: 0rem;
+            padding-bottom: 0.5rem;
         }
 
         html, body, [data-testid="stAppViewContainer"] {
@@ -120,7 +121,7 @@ with left_col:
                     padding: 20px;
                     border-radius: 10px;
                     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-                    margin-bottom: 0.5rem;
+                    margin-bottom: 0.3rem;
                 }
             """,
     ):
@@ -190,7 +191,7 @@ with right_col:
                         border-radius: 10px;
                         #box-shadow: 0 2px 8px rgba(0,0,0,0.08);
                         box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-                        height: 455px;  /* You can adjust this value */
+                        height: 450px;  /* You can adjust this value */
                         display: flex;
                         justify-content: center;
                         align-items: flex-start;
